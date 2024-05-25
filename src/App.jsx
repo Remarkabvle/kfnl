@@ -1,12 +1,14 @@
-import React, {memo} from 'react'
-import KanbanBoard from './components/kanban-board/KanbanBoard'
+import React, { useState } from 'react';
+import KanbanBoard from './components/kanban-board/KanbanBoard.jsx';
+import './App.css';
 
-const App = () => {
+function App() {
+    
   return (
-    <>
-      <KanbanBoard/>
-    </>
-  )
+    <div className="App">
+        <KanbanBoard />
+     </div>
+  );
 }
 
-export default memo(App)
+export default App;
